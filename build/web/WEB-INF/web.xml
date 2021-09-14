@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>
+	gmail</display-name>
+	<servlet>
+		<description>
+		</description>
+		<display-name>
+		CaptchaServlet</display-name>
+		<servlet-name>CaptchaServlet</servlet-name>
+		<servlet-class>
+		CaptchaServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>
+		codesending</display-name>
+		<servlet-name>codesending</servlet-name>
+		<servlet-class>
+		codesending</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>
+		sendmail</display-name>
+		<servlet-name>sendmail</servlet-name>
+		<servlet-class>
+		sendmail</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CaptchaServlet</servlet-name>
+		<url-pattern>/CaptchaServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>codesending</servlet-name>
+		<url-pattern>/codesending</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>sendmail</servlet-name>
+		<url-pattern>/sendmail</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	
+	<servlet-name>decryptedmsg</servlet-name>
+	<servlet-class>decryptedmsg</servlet-class>
+	
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>decryptedmsg</servlet-name>
+	<url-pattern>/decryptedmsg</url-pattern>
+	
+	
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>home.html</welcome-file>
+		
+	</welcome-file-list>
+	
+</web-app>
